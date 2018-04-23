@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DjangoModelDependency</ID>
+  <OriginalElement>#project_store</OriginalElement>
+  <nodes>
+    <node x="450.5" y="110.0">django.contrib.auth.models.Group</node>
+    <node x="0.0" y="735.0">products.models.Product_image</node>
+    <node x="21.578703703703695" y="382.99999999999994">orders.models.Status</node>
+    <node x="24.0" y="548.75">landing.models.Subscriber</node>
+    <node x="438.0231481481482" y="380.0">orders.models.Order</node>
+    <node x="214.52314814814815" y="381.0">products.models.Product</node>
+    <node x="26.642857142857224" y="87.14285714285714">django.contrib.auth.models.Permission</node>
+    <node x="264.7215608465608" y="267.0">django.contrib.auth.models.User</node>
+    <node x="226.00000000000006" y="713.0">orders.models.Product_in_order</node>
+    <node x="451.00000000000006" y="717.0">orders.models.ProductInBasket</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="orders.models.Order" target="django.contrib.auth.models.User">
+      <point x="52.99999999999994" y="-136.0" />
+      <point x="596.6595117845118" y="335.9090909090909" />
+      <point x="365.63425925925935" y="334.8888888888889" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="orders.models.ProductInBasket" target="products.models.Product">
+      <point x="-50.75" y="-114.0" />
+      <point x="501.75000000000006" y="688.0" />
+      <point x="391.18981481481484" y="688.0" />
+      <point x="70.66666666666669" y="114.0" />
+    </edge>
+    <edge source="django.contrib.auth.models.User" target="django.contrib.auth.models.Group">
+      <point x="51.75" y="-26.0" />
+      <point x="419.8287037037037" y="249.0" />
+      <point x="560.5" y="249.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="orders.models.Order" target="orders.models.Status">
+      <point x="-53.00000000000006" y="-136.0" />
+      <point x="490.02314814814815" y="355.0" />
+      <point x="111.5787037037037" y="354.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="django.contrib.auth.models.User" target="django.contrib.auth.models.Permission">
+      <point x="-51.75" y="-26.0" />
+      <point x="316.3287037037037" y="243.71428571428572" />
+      <point x="147.64285714285717" y="243.57142857142856" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="orders.models.Product_in_order" target="products.models.Product">
+      <point x="-50.75" y="-103.0" />
+      <point x="276.75000000000006" y="682.0" />
+      <point x="320.52314814814815" y="682.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="orders.models.Product_in_order" target="orders.models.Order">
+      <point x="50.75" y="-103.0" />
+      <point x="378.25000000000006" y="673.25" />
+      <point x="491.02314814814827" y="673.0" />
+      <point x="-53.0" y="136.0" />
+    </edge>
+    <edge source="products.models.Product_image" target="products.models.Product">
+      <point x="0.0" y="-81.0" />
+      <point x="103.0" y="666.5" />
+      <point x="249.85648148148147" y="666.75" />
+      <point x="-70.66666666666669" y="114.0" />
+    </edge>
+    <edge source="orders.models.ProductInBasket" target="orders.models.Order">
+      <point x="50.75" y="-114.0" />
+      <point x="599.25" y="744.0" />
+      <point x="597.0231481481482" y="666.0" />
+      <point x="52.99999999999994" y="136.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="360.0" y="423.77777777777777" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+

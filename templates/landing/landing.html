@@ -7,14 +7,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <link rel = "stylesheet" href="{% static 'style.css' %}">
+    <link rel = "stylesheet" href="{% static 'static_dev/css/landing.css' %}">
 </head>
 <body>
     <div class="main-container">
         <div class="container top-container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h1 class="title">Магазин скоро откроется<br>
+                    <h1 class="title">Приветствую, покупатель<br>
                     Оставьте ваши email и имя</h1>
                     <div>
                         <form action="" method="post" class="form-inline text-center">{% csrf_token %}
@@ -26,10 +26,13 @@
                                 <label>Имя: </label>
                                 <input name="{{ form.name.name }}" class="form-control">
                             </div>
-                            <button type="submit" class="btn-green">Сохранить</button>
+                            <button type="submit" class="btn btn-blue">Сохранить</button>
                         </form>
                     </div>
                 </div>
+            </div>
+            <div class="text-center">
+                <h3><a href="/">Перейти на главную страницу</a></h3>
             </div>
         </div>
     </div>
